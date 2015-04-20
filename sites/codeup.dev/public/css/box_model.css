@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+
+}
+
+.BoxA {
+	background-color: #d84231;
+}
+
+.BoxB {
+	background-color: #eaae33;
+}
+
+.BoxC {
+	background-color: #fdf733;
+}
+
+.BoxD {
+	background-color: #578c05;
+
+}
+
+.BoxE {
+	background-color: #234afb;
+
+}
+
+.BoxF {
+	background-color: #df8fb0;	
+}
+
+div	{
+	color: #FFF;
+	font-weight: bold;
+	text-indent: 10px;
+	border: 1px solid black;
+	width: 72px;
+	height: 72px;
+	padding: 10px;
+	margin: 25px;
+
+}
+
+#Box1, #Box2, #Box3, #Box4, #Box5, #Box6 {
+	float: left;
+	
+}
+
+#Box4 {
+	clear: left;
+
+}
+
+section {
+	position: relative;
+}
+
+
+section > img {
+	
+	
+	position: absolute;
+
+	top: -15px;
+	right: -15px;
+}
+
+.ribbon {
+
+	position: absolute;
+
+	top: 0px;	
+	right: 0px;
+	
+}
+

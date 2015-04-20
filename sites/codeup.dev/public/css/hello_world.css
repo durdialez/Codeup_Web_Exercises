@@ -1,0 +1,65 @@
+h1 { 
+	color: hotpink; 
+}
+
+h2 {
+	color: purple;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+ol {
+	background-color: rgba(100, 100, 34, 0.15);
+}
+
+ol {
+	list-style: upper-roman;
+}
+
+ul {
+	list-style: square;
+}
+
+body {
+	font-family: Helvetica; cursive;
+}
+
+td {
+	font-size: 25px;
+}
+
+tr {
+	font-size: 30px;
+}
+
+tr>td {
+	text-align: center;
+}
+
+a {
+	color: red;
+}
+
+body {
+	background-image: url(../img/paisley.png);
+}
+
+body {
+	background-position: center;
+}
+
+#top {
+	color: #000;
+	background-color: yellow;
+	text-align: center;
+
+}
+
+
+
+
+
+
+

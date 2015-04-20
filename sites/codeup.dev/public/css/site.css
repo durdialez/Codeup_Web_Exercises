@@ -1,0 +1,13 @@
+.fancy-header {
+    color: blue; /* single line comment */
+    text-decoration: underline;
+}
+
+
+h1 {
+	color: red;
+}
+
+.decoration {
+	color:yellow;
+}

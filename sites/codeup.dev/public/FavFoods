@@ -1,0 +1,23 @@
+<?php var_dump($GET)?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+
+	<title>My Favorite Food</title>
+</head>
+
+<header>
+	<h2>BBQ</h2>
+</header>
+
+	<main>
+	<h3>Ingredients</h3>
+		<ul>
+			<li>Meat</li>
+			<li>Fire</li>
+			<li>Teeth</li>
+		</ul>
+	<main>
+	<form method="GET" action="/favfood.php"

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flag Excercise</title>
+
+		<style>
+
+		h1 {
+			color: #F00;
+			text-align: center;
+		
+		}
+        #container {
+            margin: 50px auto;
+            width: 600px;
+            height: 400px;
+            border: 1px solid #000;
+            padding: 0px;
+            position: relative;
+           
+        }
+        #red {
+            background-color: #F00;
+            height: 200px;
+            width: 400px;
+            margin: 0px;
+
+            position: absolute;
+            bottom: 0px;	
+            right: 0px;
+
+        }
+        #blue {
+            background-color: #00F;
+            height: 400px;
+            width: 200px;
+            margin: 0px;
+
+            float: left;
+            position: relative;
+        }
+        #white {
+        	background-color: #FFF;
+        	height: 100px;
+        	width: 400px;
+        	margin:	0px;
+
+
+
+        	
+        	
+        }
+
+        #star-five {
+		   margin: 50px 0;
+		   position: relative;
+		   display: block;
+		   color: #FFF;
+		   width: 0px;
+		   height: 0px;
+		   border-right:  100px solid transparent;
+		   border-bottom: 70px solid white;
+		   border-left:   100px solid transparent;
+		   -moz-transform:    rotate(35deg);
+		   -webkit-transform: rotate(35deg);
+		   -ms-transform:     rotate(35deg);
+		   -o-transform:      rotate(35deg);
+		}
+		#star-five:before {
+		   border-bottom: 80px solid white;
+		   border-left: 30px solid transparent;
+		   border-right: 30px solid transparent;
+		   position: absolute;
+		   height: 0;
+		   width: 0;
+		   top: -45px;
+		   left: -65px;
+		   display: block;
+		   content: '';
+		   -webkit-transform: rotate(-35deg);
+		   -moz-transform:    rotate(-35deg);
+		   -ms-transform:     rotate(-35deg);
+		   -o-transform:      rotate(-35deg);
+
+		}
+		#star-five:after {
+		   position: absolute;
+		   display: block;
+		   color: #FFF;
+		   top: 3px;
+		   left: -105px;
+		   width: 0px;
+		   height: 0px;
+		   border-right: 100px solid transparent;
+		   border-bottom: 70px solid white;
+		   border-left: 100px solid transparent;
+		   -webkit-transform: rotate(-70deg);
+		   -moz-transform:    rotate(-70deg);
+		   -ms-transform:     rotate(-70deg);
+		   -o-transform:      rotate(-70deg);
+		   content: '';
+		}
+        
+
+
+    </style>
+
+<header>
+		<h1>TEXAS</h1>
+</header>
+
+</head>
+
+
+<body>
+
+	<div id="container">
+
+
+		<div id="blue"></div>
+		<div id="red"></div>
+		<div id="white"></div>
+
+		<div id="star-five"></div>
+
+	</div>
+
+</body>
+</html>
