@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Grid</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+
+<!-- 		CSS 		-->
+
+<style type="text/css">
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.container {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1200px;
+	border: 1px solid black;
+	background-color: green;
+}
+
+.row {
+	width: 100%;
+	border: 1px solid black;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	width: 100%;
+	border: 1px solid black;
+}
+
+.column.full {
+	width: 100%;
+	background-color: skyblue;
+}
+
+.column.one-half {
+	width: 50%;
+}
+
+.column.one-third {
+	width: 33.33%;
+}
+
+.column.one-fourth {
+	width: 25%;
+	background-color: orange;
+}
+
+.column.one-sixth {
+	width: 16.66%;
+	background-color: magenta;
+}
+
+.column.one-eighth {
+	width: 12.5%;
+}
+
+.offset-one-quarter {
+	margin-left: 25%;
+}
+
+.offset-eighth {
+	margin-left: 12.5%;
+}
+
+
+</style>
+
+<!-- 		HTML        -->
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="column full">Full</div>
+		</div>
+		<div class="row">
+			<div class="column one-half">1/2</div>
+			<div class="column one-half">1/2</div>
+		</div>
+		<div class="row">
+			<div class="column one-third">1/3</div>
+			<div class="column one-third">1/3</div>
+			<div class="column one-third">1/3</div>
+		</div>
+		<div class="row">
+			<div class="column one-fourth">1/4</div>
+			<div class="column one-fourth">1/4</div>
+			<div class="column one-fourth">1/4</div>
+			<div class="column one-fourth">1/4</div>
+		</div>
+		<div class="row">
+			<div class="column one-sixth">1/6</div>
+			<div class="column one-sixth">1/6</div>
+			<div class="column one-sixth">1/6</div>
+			<div class="column one-sixth">1/6</div>
+			<div class="column one-sixth">1/6</div>
+			<div class="column one-sixth">1/6</div>
+		</div>
+		<div class="row">
+			<div class="column one-eighth">1/8</div>
+			<div class="column one-eighth">1/8</div>
+			<div class="column one-eighth">1/8</div>
+			<div class="column one-eighth">1/8</div>
+			<div class="column one-eighth">1/8</div>
+			<div class="column one-eighth">1/8</div>
+			<div class="column one-eighth">1/8</div>
+			<div class="column one-eighth">1/8</div>
+		</div>
+		<div class="row">
+			<div class="column one-half offset-one-quarter">Offset 1/4</div>
+		</div>
+		<div class="row">
+			<div class="column one-third offset-eighth">Offset eighth</div>
+		</div>
+	</div>
+</body>
+</html>

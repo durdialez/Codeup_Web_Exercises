@@ -1,0 +1,36 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: #e1e1e1;
+}
+
+footer {
+	padding: 50px;
+	clear: both;
+}
+
+img {
+	float: left;
+	width: 100%;
+}
+
+nav {
+	background-color: black;
+}
+
+li {
+	font-size: 30px;
+	display: inline;
+}
+
+a {
+	color: red;
+	padding: 25px;
+	text-decoration: underline;
+}

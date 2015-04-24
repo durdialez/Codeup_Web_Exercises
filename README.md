@@ -1,3 +1,7 @@
+# Codeup Examples
+
+These are examples of what I will be doing at my time at Codeup!
+
 # Codeup Vagrant Box & Ansible Scripts
 
 This repository contains files and scripts intended for [Codeup](http://www.codeup.com) students to use throughout their class. It contains:
