@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions Exercise</title>
+</head>
+<body>
+
+	<script>
+		'use strict';
+
+		var myNameIs = 'Dan the man'; // todo: Fill in your name here.
+
+		// todo:
+		// DONE Create a function called 'sayHello' that takes a parameter 'name'.
+		function sayHello(name) {
+			console.log('Hello from ' + name);
+			
+		}
+		sayHello("Bob or something");
+		sayHello(myNameIs);
+		
+		// FUNCTION CALL
+		// The function call consists of the name of the function followed by paranthesis 
+
+
+
+
+		// do not worry about the details of this line
+		// just know that it generates a random number between 1 and 100
+		var random = Math.floor((Math.random()*100)+1);
+
+		// todo:
+
+		function isOdd(random) {
+			var message = (random % 2 != 0) ? "Number is odd." : "Number is not odd.";
+			return message;
+		}
+
+		console.log('The number generated is ' + random);
+		console.log(isOdd(random));
+
+
+				// DONE Create a function called 'isOdd' that takes a number as a parameter.
+		// DONE The function should use the ternary operator to log a message.
+		// The log should tell the number passed in and whether it is odd or not.
+
+		// todo: Call the function 'isOdd' passing the variable 'random' as a parameter.
+	</script>
+
+</body>
+</html>

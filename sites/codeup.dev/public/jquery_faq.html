@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery FAQ list</title>
+
+	<h1>State Park FAQ</h1>
+</head>
+<body>
+	<style> 
+		.invisible {
+			display: none;
+		}
+	</style>
+
+	<script src="/js/jquery-2.1.4.min.js"></script>
+
+	<script>
+
+	"use strict";
+
+	$('document').ready(function() {
+        $('#show-answers').click(function(event) {
+            event.preventDefault();
+            $('dd').toggleClass('invisible');
+        });
+    });
+
+
+	</script>
+
+	<dl>
+		<dt>Should I bring water while hiking?</dt>
+		<dd class="invisible">-Yes.  Staying hydrated while hiking is very important.</dd>
+
+		<dt>Is it ok to feed the wildlife while on the trails?</dt>
+		<dd class="invisible">-No.  Feeding the wildlife is prohibited by state law.</dd>
+
+		<dt>Do you have to wear shoes?</dt>
+		<dd class="invisible">-Yes.  Unless you want some sick looking blisters.</dd>
+
+		<dt>Can you litter?</dt>
+		<dd class="invisible">-NO YOU CANT!!!!!!</dd>
+
+		<dt>Where should we park?</dt>
+		<dd class="invisible">-There are designated parking areas throughout the park.</dd>
+
+		<dt>How do I reserve a camping spot?</dt>
+		<dd class="invisible">-You can reserve a camping spot online on the park website.</dd>
+
+	</dl>
+
+	<a href="#" id="show-answers">Click to toggle the answers of FAQ</a>
+	
+</body>
+
+</body>
+</html>

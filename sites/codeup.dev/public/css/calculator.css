@@ -1,0 +1,51 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.container {
+	margin: 25px auto;
+	width: 100%;
+	max-width: 200px;
+	border: 1px solid black;
+}
+
+input {
+	width: 31.5%;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 10px;
+	background-color: lightgrey;
+}
+
+button {
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 23%;
+}
+
+.column.one-fourth {
+	width: 25%;
+}
+
+.column.one-third {
+	width: 33.33%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	width: 100%;
+}

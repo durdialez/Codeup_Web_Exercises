@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Konami Code</title>
+</head>
+<body id="game">
+	<h1>Code</h1>
+
+	<script src="/js/jquery-2.1.4.min.js"></script>
+	<script>
+
+		"use strict";
+
+		var konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+		var key = [];
+
+
+
+		var listener = function(event) {
+			key.push(event.keyCode);
+			console.log(event.keyCode);
+
+			if(konami.toString() == key.toString()) {
+				console.log('30 lives');
+			}
+		};
+
+
+
+		
+
+
+
+		// var body = document.getElementById("game");
+		// body.addEventListener('keyup', listener, false);
+
+		$('body').keyup(listener);
+
+
+
+
+	</script>
+
+</body>
+</html>

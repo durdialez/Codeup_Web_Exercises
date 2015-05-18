@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="/css/calculator.css">
+
+<body>
+	<div class="container">
+		<div class="row">
+			<input type="text" class="column one-third" id="left_operator" readonly></input>
+			<input type="text" class="column one-third" id="operand" readonly></input>
+			<input type="text" class="column one-third" id="right_operator" readonly></input>
+		</div>
+
+		<div class="row">	
+			<button id="1" class="column one-fourth number" value="1">1</button>
+			<button id="2" class="column one-fourth number" value="2">2</button>
+			<button id="3" class="column one-fourth number" value="3">3</button>
+			<button id="+" class="column one-fourth operator" value="+">+</button>
+		</div>
+
+		<div class="row">	
+			<button id="4" class="column one-fourth number" value="4">4</button>
+			<button id="5" class="column one-fourth number" value="5">5</button>
+			<button id="6" class="column one-fourth number" value="6">6</button>
+			<button id="-" class="column one-fourth operator" value="-">-</button>
+		</div>
+
+		<div class="row">	
+			<button id="7" class="column one-fourth number" value="7">7</button>
+			<button id="8" class="column one-fourth number" value="8">8</button>
+			<button id="9" class="column one-fourth number" value="9">9</button>
+			<button id="*" class="column one-fourth operator" value="*">*</button>
+		</div>
+
+		<div class="row">	
+			<button id="C" class="column one-fourth operator" value="C">C</button>
+			<button id="0" class="column one-fourth number" value="0">0</button>
+			<button id="=" class="column one-fourth operator" value="=">=</button>
+			<button id="/" class="column one-fourth operator" value="/">/</button>
+		</div>
+	</div>
+
+	<script>
+
+		"use strict";
+
+		var leftSide = [];
+		var operand = [];
+		var rightSide = [];
+		var button = document.getElementsByTagName("button");
+
+		var numberListener = function(event) {
+			// console.log('listened');
+			document.getElementById("left_operator").value += this.value;
+		}
+
+
+		var operatorListener = function(e) {
+			document.getElementById("operand").value += this.value;
+		}
+
+		for (var i = 0; i < button.length; i++) {
+			if (button[i].className.indexOf("number") != -1) {
+				button[i].addEventListener('click', numberListener, false);
+			} else if (button[i].className.indexOf("operator") != -1) {
+				button[i].addEventListener('click', operatorListener, false);
+			}
+		};
+
+		//
+
+	</script>
+
+
+
+</body>
+</html>

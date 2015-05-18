@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Tanya</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+	"use strict";
+
+	var globalVar = "Look, I'm Global!";
+
+	// call the say hello function
+	sayHello();
+
+	// define the sayHello function
+	function sayHello() {
+	    // globalVar is accessible here since the sayHello function scope is a sub-scope of the global scope
+	    alert(globalVar);
+	}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects Math</title>
+</head>
+<body>
+
+	<script>
+
+	'use strict';
+
+		// create a circle object
+	var circle = {
+	    radius: 3,
+	    getArea: function (area) {
+	    	Math.Pi * Math.pow(radius, 2);
+	        // todo: finish this method
+	        // hint: area = pi * radius^2
+	        return; // todo: return data
+	    },
+	    logInfo: function (round) {
+	        // todo: complete this method. if round is true, round the result to the nearest integer.
+	        Math.round()
+	        console.log('Area of a circle with radius: ' + this.radius + ', is: ' );
+	    }
+	};
+
+	// log info about the circle
+	circle.logInfo(false);
+	circle.logInfo(true);
+
+	// todo:
+	// Change the radius of the circle to 5.
+
+	// log info about the circle
+	circle.logInfo(false);
+	circle.logInfo(true);
+	</script>
+
+</body>
+</html>

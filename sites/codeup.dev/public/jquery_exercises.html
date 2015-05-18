@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Exercises</title>
+
+	<h1 id="heading">JQuery Test</h1>
+</head>
+<body>
+	<p class="codeup" id="the-paragraph">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<ul id="ordered-list">
+		<li class="odd">One</li>
+		<li>Two</li>
+		<li class="odd">Three</li>
+		<li>Four</li>
+	</ul>
+
+	<ol class="codeup" id="ordered-list">
+		<li class="odd">Robot</li>
+		<li>Lobster</li>
+		<li class="odd">Tank</li>
+		<li>Beef Jerky</li>
+	</ol>
+
+	<div id="final-paragraph">
+		<p class="odd">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. 
+		</p>
+	</div>
+
+	<script src="/js/jquery-2.1.4.min.js"></script>
+
+	<script>
+
+		'use strict';
+
+		$(document).ready(function() {
+			$('h1').click(function() {
+				$(this).css('background-color', '#FF0');
+				console.log('You clicked h1 element');
+			});
+
+			$('p').dblclick(function() {
+				$(this).css('font-size', '18px');
+				console.log('paragraph has been clicked');
+			});
+
+			$('li').hover(
+				function() {
+					$(this).css('color', '#F00');
+					console.log('list item has been hovered over');
+				},
+				function() {
+					$(this).css('color', '#000');
+				} 
+			);
+		});
+
+
+
+
+	</script>
+
+</body>
+</html>

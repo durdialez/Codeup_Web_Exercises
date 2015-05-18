@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM: Query and Modify</title>
+</head>
+<body>
+
+    <h1 id="main-header">Hello World!</h1>
+    <ul>
+        <li data-dbid="1">Item 1</li>
+        <li data-dbid="2">Item 2</li>
+        <li data-dbid="1">Item 3</li>
+        <li data-dbid="1">Item 4</li>
+        <li data-dbid="5">Item 5</li>
+    </ul>
+    <h2 id="sub-header">Hello Again.</h2>
+    <p class="sub-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <button id="btn1">Click Me</button>
+    <button id="btn2">Push Me</button>
+    <button id="btn3">Tickle Me</button>
+    <button id="btn4">Don't Touch Me</button>
+
+
+    <style>
+        button {
+            font-size: 20px;
+        }
+        #btn1 {
+            background-color: blue;
+            color: white;
+        }
+
+        #btn2 {
+            background-color: magenta;
+            color: white;
+        }
+
+        #btn3 {
+            background-color: green;
+            color: white;
+        }
+
+        #btn4 {
+            background-color: red;
+            color: white;
+        }
+
+    </style>
+    
+    <script>
+        "use strict";
+
+        var listener = function(event){
+            console.log("You clicked the button");
+            this.innerHTML='BOOM';
+            mainHeader.innerHTML = "JavaScript is Cool";
+        }
+
+        var pushMe = function(event){
+            this.innerHTML="HAHA";
+            console.log("Hey watch it!");
+            subHeader.style['color'] = '#00F';
+
+        }
+
+        var tickleMe = function(event){
+            this.innerHTML="HEHE";
+            console.log("STOP IT");
+            
+            for (var i = 0; i < listItems.length; i++) {  
+            if (i%2==1) {
+                listItems[i].style['color'] = '#ddd';
+            }
+
+            if (listItems[i].attributes["data-dbid"].value == "1") {
+                listItems[i].style['color'] = '#00F';
+            };
+        };
+        }
+
+        var dontTouchMe = function(event){
+            this.innerHTML="WHY!?"
+            console.log("You clicked the button...WHY");
+            subParagraphs[0].innerHTML = 'Mission Accomplished!';
+        }
+
+        var btn1 = document.getElementById('btn1').addEventListener('click', listener, false);
+
+        var btn2 = document.getElementById('btn2').addEventListener('click', pushMe, false);
+
+        var btn3 = document.getElementById('btn3').addEventListener('click', tickleMe, false);
+
+        var btn4 = document.getElementById('btn4').addEventListener('click', dontTouchMe, false);
+        
+
+
+
+        // todo: get the main header element by id
+        var mainHeader = document.getElementById("main-header");
+
+
+        // todo: set inner html of mainHeader to "JavaScript is Cool"
+
+        // todo: get the sub header element by id
+        var subHeader = document.getElementById("sub-header");
+
+        // todo: set the text color of subHeader to blue
+      
+
+
+        // todo: get all list items
+        var listItems = document.getElementsByTagName('li');
+
+
+        // todo: set text color on every other list item to grey
+        
+        // todo: set text color of li with dbid = 1 to blue
+
+
+        // todo: get all elements with class name sub-paragraph
+        var subParagraphs = document.getElementsByClassName('sub-paragraph');
+
+
+        // todo: change the text in the first sub paragraph to "Mission Accomplished!"
+        
+
+    </script>
+
+</body>
+</html>

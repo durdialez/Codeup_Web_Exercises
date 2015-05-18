@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework 5-14</title>
+</head>
+<body>
+
+<div id="random"></div>
+<div id="score">0</div>
+
+    <script src="/js/jquery-2.1.4.min.js"></script>
+
+    <script>
+
+    "use strict";
+
+        var keyMapping = {
+            65: 'a',
+            66: 'b',
+            67: 'c',
+            68: 'd',
+            69: 'e',
+            70: 'f',
+            71: 'g',
+            72: 'h',
+            73: 'i',
+            74: 'j',
+            75: 'k',
+            76: 'l',
+            77: 'm',
+            78: 'n',
+            79: 'o',
+            80: 'p',
+            81: 'q',
+            82: 'r',
+            83: 's',
+            84: 't',
+            85: 'u',
+            86: 'v',
+            87: 'w',
+            88: 'x',
+            89: 'y',
+            90: 'z',
+        };
+
+        function randString() {
+            var text = '';
+            var possible = 'abcdefghijklmnopqrstuvwxyz';
+
+            for(var i=0; i < 5; i++)
+            {
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+            }
+
+            return text;
+        }
+
+        var intervalID = setInterval(function(){
+
+                $("#random").html(randString);
+                // Call random function to get random string
+                // Set html of an element to this random string so user can see it
+                // Capture user keyboard and match with random string before it changes
+                
+                // If user enters correctly give the user a point and add that to the html
+
+        }, 5000);
+
+    </script>
+
+</body>
+</html>
