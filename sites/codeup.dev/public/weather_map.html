@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Map</title>
+
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/weather_api.css">
+
+</head>
+<body>
+
+	<div id="container">
+		<h1>Weather Application</h1>
+
+		<h3 class="city-name"></h3>
+
+		<div class="row">
+			<div class="column one-third" id="day-1">TEST</div>
+			<div class="column one-third" id="day-2">TEST</div>
+			<div class="column one-third" id="day-3">TEST</div>
+		</div>
+		<div id="map-canvas"></div>
+	</div>
+
+	<form>
+		<p>
+		<input type="text" id="latitude" placeholder="Latitude">
+		<input type="text" id="longitude" placeholder="Longitude">
+		</p>
+		<button type="submit" id="search-form">Search</button>
+	</form>
+
+
+
+<script src="/js/jquery-2.1.4.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ1bzJkPNC7115wrh5hGD7fc0rKwdGeF4"></script>
+
+<script>
+
+	"use strict";
+
+	var lat = 29.423017;
+	var lon = -98.48527;
+
+	var weather = $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+    	APPID: "c6440243299cbf19ded7c6a17ed9fa23",
+    	lat:    lat,
+    	lon:   lon,
+    	units: "imperial",
+    	cnt: 	3
+	});  
+
+	weather.done(function(data) {
+		console.log(data);
+
+		data.list.forEach(function(day, index) {
+			var htmlString = '';
+			var iconURL = "http://openweathermap.org/img/w/" + day.weather[0].icon + ".png";
+
+			console.log(day);
+
+            htmlString += '<p class="temperature">' + Math.round(day.temp.max) + "&deg;" + '/ ' + Math.round(day.temp.min) + "&deg;" + '</p>';
+            htmlString += '<img class="weather-icon">';
+            htmlString += '<p class="clouds">Clouds: ' + day.weather[0].description + '</p>';
+            htmlString += '<p>Humidity: ' + day.humidity + ' %' + '</p>';
+            htmlString += '<p>Wind: ' + Math.round(day.speed) + ' mph' + '</p>';
+            htmlString += '<p class="pressure">Pressure: ' + Math.round(day.pressure) + '</p>';           
+
+            $('#day-' + (index + 1)).html(htmlString);
+            $('.weather-icon').attr("src", iconURL);
+            $('.city-name').html(data.city.name);
+
+
+		});
+
+		var mapOptions = {
+      // Set the zoom level
+      		zoom: 16,
+      // This sets the center of the map at our location
+      center: { lat: 30.361154, lng:-97.71515 }
+
+    };
+
+		var location = {
+			address: '112 E Pecan St, San Antonio, TX, 78205', 
+			};
+		// Google Map start
+		var geocoder = new google.maps.Geocoder();
+
+		// Geocode our address
+		geocoder.geocode( { address: location.address}, function(results, status) {
+  		// Check for a successful result
+  			if (status == google.maps.GeocoderStatus.OK) {
+    	// Set our map options
+    			var mapOptions = {
+      	// Set the zoom level
+      				zoom: 10,
+      	// This sets the center of the map at our location
+      				center: { lat: 29.423017, lng: -98.48527 }
+    			}
+    	// Render the map
+    		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  		} else {
+    	// Show an error message with the status if our request fails
+    		alert("Geocoding was not successful - STATUS: " + status);
+  			}
+		});
+
+		     
+
+	
+	});
+
+</script>
+
+</body>
+</html>

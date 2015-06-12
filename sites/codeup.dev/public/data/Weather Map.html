@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Map</title>
+
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/weather_api.css">
+</head>
+<body>
+
+	<h1>Weather Application</h1>
+
+	<div id="container">
+		<div class="row">
+			<div class="column one-third day-one">TEST</div>
+			<div class="column one-third day-two">TEST</div>
+			<div class="column one-third day-three">TEST</div>
+		</div>
+
+	</div>
+
+
+
+<script src="/js/jquery-2.1.4.min.js"></script>
+
+<script>
+
+	"use strict";
+
+	var weather = $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+    	APPID: "c6440243299cbf19ded7c6a17ed9fa23",
+    	lat	:    29.423017,
+    	lon:   -98.48527,
+    	q:     "San Antonio, TX",
+    	units: "imperial",
+    	cnt: 3
+	});  
+
+	weather.done(function(data) {
+		console.log(data);
+		
+		// var iconURL = "http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png";
+		// 	$("#weather-icon").attr("src", iconURL);
+		var htmlString = '';
+
+
+            htmlString += '<p>' + data.list[0].temp.max + '/' + data.list[0].temp.min + '</p>';
+            htmlString += '<img id="weather-icon>';
+            htmlString += '<p>Clouds: ' + data.list[0].weather[0].main + '</p>';
+            htmlString += '<p>Humidity: ' + data.list[0].humidity + '</p>';
+            htmlString += '<p>Wind: ' + data.list[0].speed + '</p>';
+            htmlString += '<p>Pressure: ' + data.list[0].pressure + '</p>';    
+
+
+            $('.day-one').html(htmlString);
+
+	
+	});
+
+</script>
+
+</body>
+</html>

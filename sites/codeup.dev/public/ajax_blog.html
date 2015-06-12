@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax Blog</title>
+
+	<h1>My First Ajax Blog</h1>
+</head>
+<body>
+
+	<div id="posts"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+(function() {
+
+    var inventory = $.get("/data/blog.json");
+
+    inventory.done(function(data){
+        alert("Loading complete");
+
+        var htmlString = '';
+    
+        $(data).each(function(index, product){
+            
+                htmlString += '<h2>' + product.title + '</h2>';
+                htmlString += '<blockquote>' + product.content + '</blockquote>';
+                htmlString += '<p>' + product.categories + '</p>';
+                htmlString += '<p>' + product.date + '</p>';
+        })
+
+        $('#posts').html(htmlString);
+
+        console.log(htmlString);
+
+    });
+
+    console.log('test');
+
+})();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+#container > div {
+	height: 50px;
+	width: 80%;
+	float: left;
+	margin: 20px;
+}
+
+.box:nth-child(1) {
+	background-color: red;
+}
+.box:nth-child(2) {
+	background-color: blue;
+}
+.box:nth-child(3){
+	background-color: orange;
+}
+.box:nth-child(4){
+	background-color: green;
+}
+.box:nth-child(5) {
+	background-color: purple;
+}
+
+@media screen and (min-width: 550px) and (max-width: 799px) {
+	div {
+		width: 30%;
+		margin: 5px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	div {
+		width: 25%;
+		margin: 1px;
+	}
+}

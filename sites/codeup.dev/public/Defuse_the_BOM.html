@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
     <title>Defuse the BOM</title>
 </head>
 <body>
@@ -10,8 +9,9 @@
 
     <script>
         var detonationTimer = 5;
+        var interval = 1000;
         // TODO: This function needs to be called once every second
-        function updateTimer()
+        var intervalId = setInterval(function updateTimer()
         {
             if (detonationTimer == 0) {
                 alert('EXTERMINATE!');
@@ -21,20 +21,16 @@
             }
 
             detonationTimer--;
-        }
+
+        }, interval);
+
 
         // TODO: When this function runs, it needs to
         // cancel the interval/timeout for updateTimer()
-        function defuseTheBOM()
-        {
-            if (detonationTimer > 0) {
-                clearInterval(updateTimer)
-                alert('You Did It!!!');
-            }
+        function defuseTheBOM() {
+            clearInterval(intervalId);
+            alert('You did it!');
         }
-
-        setInterval(updateTimer,1000);
-
 
         // Don't modify anything below this line!
         //
@@ -44,5 +40,6 @@
         var defuser = document.getElementById('defuser');
         defuser.addEventListener('click', defuseTheBOM, false);
     </script>
-</body>
-</html>
+
+
+</body></html>

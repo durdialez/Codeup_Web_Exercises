@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animate</title>
+    <style>
+        html, body {
+            margin: 0px;
+            padding: 0;
+        }
+
+        #btn-animate {
+            margin: 15px;
+        }
+
+        .box {
+            /*background-image: url(../img/devito.gif);*/
+            background-color: #000033;
+            height: 250px;
+            margin: 15px;
+            position: relative;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 2.5px grey;
+
+        }
+
+        button {
+            font-size: 10px;
+            height: 30px;
+            width:75px;
+        }
+
+        #btn-move {
+            margin-left: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <h1>Devito</h1> -->
+
+    <p>
+        <button id="btn-move">Move It</button>
+
+        <button id="btn-scale-down">Scale It</button>
+
+        <button id="btn-disappear">Disappear It</button>
+
+        <button id="btn-show">Show It</button>
+
+        <button id="btn-all">Animate all</button>
+    </p>
+
+    <div id="animate-box" class="box"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+
+        (function(){
+
+            'use strict';
+
+            $(document).ready(function(){
+
+                $('#btn-move').click(function() {
+                    $('#animate-box').animate({
+                        left: "100"
+                    }, 1000);
+                });
+
+                $('#btn-scale-down').click(function() {
+                    $('#animate-box').animate({
+                        width: "50%"
+                    }, 2000);
+                });
+
+                $('#btn-disappear').click(function() {
+                    $('#animate-box').animate({
+                        opacity: 0
+                    }, 1000);
+                });
+
+                $('#btn-show').click(function() {
+                    $('#animate-box').animate({
+                        opacity: 1
+                    }, 5000);
+                });
+
+                $('#btn-all').click(function() {
+                    $('#animate-box')
+                    .animate({ left: "+=100" }, 1000)
+                    .animate({ width: "50%" }, 500)
+                    .animate({ opacity: 0},2500)
+                    .animate({ opacity: 1}, 5000)
+                });
+
+            });
+
+            // todo: Move the box by 100 pixels from the left
+
+            // todo: Scale the width up by 50%
+
+            // todo: Use opacity to make the box invisible
+
+            // todo: Make the box appear again with opacity
+
+            // todo: Once all is done see if you can chain all the animations
+            // to happen with the `Animate all` button.
+            // Refresh to start over before hitting the button.
+            
+
+        })();
+    
+    </script>
+</body>
+</html>

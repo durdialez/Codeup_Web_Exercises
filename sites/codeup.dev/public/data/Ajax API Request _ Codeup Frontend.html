@@ -1,0 +1,2203 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    <!-- Start book Codeup Frontend -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Ajax API Request | Codeup Frontend</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../../../content/jquery/whack-a-mole/create-game.html" />
+    
+    
+    <link rel="prev" href="../../../content/jquery/ajax/ajax-intro.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+<link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+    <link rel="stylesheet" href="../../../gitbook/plugins/gitbook-plugin-scrollablecode/scrollablecode.css">
+    
+
+    
+    <link rel="stylesheet" href="../../../gitbook/plugins/gitbook-plugin-toggle-chapters/test.css">
+    
+
+    
+    <link rel="stylesheet" href="../../../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+    
+
+
+        
+    <div class="book" data-level="5.6.2" data-basepath="../../.." data-revision="1431986756171">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	    
+            <li>
+                <a href="http://www.codeup.com" target="blank" class="custom-link">Codeup</a>
+            </li>
+    	
+    	    
+            <li>
+                <a href="http://www.codeup.com/live/" target="blank" class="custom-link">Livestream</a>
+            </li>
+    	
+    	
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="content/html-css/index.html">
+            
+                
+                    <a href="../../../content/html-css/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         HTML and CSS
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="content/html-css/page-structure.html">
+            
+                
+                    <a href="../../../content/html-css/page-structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Page Structure
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="content/html-css/elements-i/index.html">
+            
+                
+                    <a href="../../../content/html-css/elements-i/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         Elements
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.2.1" data-path="content/html-css/elements-i/headings.html">
+            
+                
+                    <a href="../../../content/html-css/elements-i/headings.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.1.</b>
+                        
+                         Headings
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2.2" data-path="content/html-css/elements-i/paragraphs.html">
+            
+                
+                    <a href="../../../content/html-css/elements-i/paragraphs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.2.</b>
+                        
+                         Paragraphs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2.3" data-path="content/html-css/elements-i/lists.html">
+            
+                
+                    <a href="../../../content/html-css/elements-i/lists.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.3.</b>
+                        
+                         Lists
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2.4" data-path="content/html-css/elements-i/anchors.html">
+            
+                
+                    <a href="../../../content/html-css/elements-i/anchors.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.4.</b>
+                        
+                         Anchors
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2.5" data-path="content/html-css/elements-i/images.html">
+            
+                
+                    <a href="../../../content/html-css/elements-i/images.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.5.</b>
+                        
+                         Images
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2.6" data-path="content/html-css/elements-i/tables.html">
+            
+                
+                    <a href="../../../content/html-css/elements-i/tables.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.6.</b>
+                        
+                         Tables
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2.7" data-path="content/html-css/elements-i/semantic.html">
+            
+                
+                    <a href="../../../content/html-css/elements-i/semantic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.7.</b>
+                        
+                         Semantic Containers
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="content/html-css/attributes-i/index.html">
+            
+                
+                    <a href="../../../content/html-css/attributes-i/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Attributes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="content/html-css/forms-i/intro.html">
+            
+                
+                    <a href="../../../content/html-css/forms-i/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Forms I
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.4.1" data-path="content/html-css/forms-i/inputs-and-submitting.html">
+            
+                
+                    <a href="../../../content/html-css/forms-i/inputs-and-submitting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.1.</b>
+                        
+                         Inputs And Submitting
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.2" data-path="content/html-css/forms-i/text-textarea.html">
+            
+                
+                    <a href="../../../content/html-css/forms-i/text-textarea.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.2.</b>
+                        
+                         Text &amp; Textarea
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.3" data-path="content/html-css/forms-i/checkbox-radio.html">
+            
+                
+                    <a href="../../../content/html-css/forms-i/checkbox-radio.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.3.</b>
+                        
+                         Checkbox Radio
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4.4" data-path="content/html-css/forms-i/select.html">
+            
+                
+                    <a href="../../../content/html-css/forms-i/select.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.4.</b>
+                        
+                         Select
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="content/html-css/css-i/index.html">
+            
+                
+                    <a href="../../../content/html-css/css-i/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         CSS I
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.5.1" data-path="content/html-css/css-i/basic-selectors.html">
+            
+                
+                    <a href="../../../content/html-css/css-i/basic-selectors.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.1.</b>
+                        
+                         Basic Selectors
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.2" data-path="content/html-css/css-i/basic-properties.html">
+            
+                
+                    <a href="../../../content/html-css/css-i/basic-properties.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.2.</b>
+                        
+                         Basic Properties
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.3" data-path="content/html-css/css-i/box-model.html">
+            
+                
+                    <a href="../../../content/html-css/css-i/box-model.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.3.</b>
+                        
+                         Box Model
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.4" data-path="content/html-css/css-i/box-sizing.html">
+            
+                
+                    <a href="../../../content/html-css/css-i/box-sizing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.4.</b>
+                        
+                         Box Sizing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.5" data-path="content/html-css/css-i/positioning.html">
+            
+                
+                    <a href="../../../content/html-css/css-i/positioning.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.5.</b>
+                        
+                         Positioning
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.6" data-path="content/html-css/css-i/css-resets.html">
+            
+                
+                    <a href="../../../content/html-css/css-i/css-resets.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.6.</b>
+                        
+                         CSS Resets
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5.7" data-path="content/html-css/css-i/style-organization.html">
+            
+                
+                    <a href="../../../content/html-css/css-i/style-organization.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.7.</b>
+                        
+                         Style Organization
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="content/git/index.html">
+            
+                
+                    <a href="../../../content/git/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Git
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="content/git/creating-a-repository.html">
+            
+                
+                    <a href="../../../content/git/creating-a-repository.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Creating a Repository
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="content/git/initializing-a-repository.html">
+            
+                
+                    <a href="../../../content/git/initializing-a-repository.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Initializing a Repository
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="content/git/adding-files.html">
+            
+                
+                    <a href="../../../content/git/adding-files.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Adding Files
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="content/git/committing.html">
+            
+                
+                    <a href="../../../content/git/committing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         Committing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="content/git/pushing-and-pulling.html">
+            
+                
+                    <a href="../../../content/git/pushing-and-pulling.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         Pushing and Pulling
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="content/git/gitignore-file.html">
+            
+                
+                    <a href="../../../content/git/gitignore-file.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         Gitignore File
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="content/html-css/layouts/index.html">
+            
+                
+                    <a href="../../../content/html-css/layouts/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Layouts
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="content/html-css/layouts/grids.html">
+            
+                
+                    <a href="../../../content/html-css/layouts/grids.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         Intro to Grids
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="content/javascript/index.html">
+            
+                
+                    <a href="../../../content/javascript/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         JavaScript
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="content/javascript/primitive-types/README.html">
+            
+                
+                    <a href="../../../content/javascript/primitive-types/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Primitive Types
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1.1" data-path="content/javascript/primitive-types/booleans.html">
+            
+                
+                    <a href="../../../content/javascript/primitive-types/booleans.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                         Booleans
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.1.2" data-path="content/javascript/primitive-types/numbers.html">
+            
+                
+                    <a href="../../../content/javascript/primitive-types/numbers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                         Numbers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.1.3" data-path="content/javascript/primitive-types/strings.html">
+            
+                
+                    <a href="../../../content/javascript/primitive-types/strings.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.3.</b>
+                        
+                         Strings
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="content/javascript/javascript-with-html.html">
+            
+                
+                    <a href="../../../content/javascript/javascript-with-html.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         JavaScript with HTML
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="content/javascript/statements/README.html">
+            
+                
+                    <a href="../../../content/javascript/statements/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         Statements
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.3.1" data-path="content/javascript/statements/if-else.html">
+            
+                
+                    <a href="../../../content/javascript/statements/if-else.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.1.</b>
+                        
+                         If Else
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3.2" data-path="content/javascript/statements/switch.html">
+            
+                
+                    <a href="../../../content/javascript/statements/switch.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.2.</b>
+                        
+                         Switch
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3.3" data-path="content/javascript/statements/while.html">
+            
+                
+                    <a href="../../../content/javascript/statements/while.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.3.</b>
+                        
+                         While
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3.4" data-path="content/javascript/statements/for.html">
+            
+                
+                    <a href="../../../content/javascript/statements/for.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.4.</b>
+                        
+                         For
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3.5" data-path="content/javascript/statements/break-continue.html">
+            
+                
+                    <a href="../../../content/javascript/statements/break-continue.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.5.</b>
+                        
+                         Break Continue
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="content/javascript/functions/intro.html">
+            
+                
+                    <a href="../../../content/javascript/functions/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         Functions
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.4.1" data-path="content/javascript/functions/user-interaction.html">
+            
+                
+                    <a href="../../../content/javascript/functions/user-interaction.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.1.</b>
+                        
+                         User Interaction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4.2" data-path="content/javascript/functions/scope.html">
+            
+                
+                    <a href="../../../content/javascript/functions/scope.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.2.</b>
+                        
+                         Scope
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="content/javascript/arrays/intro.html">
+            
+                
+                    <a href="../../../content/javascript/arrays/intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         Arrays
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.5.1" data-path="content/javascript/arrays/iterating.html">
+            
+                
+                    <a href="../../../content/javascript/arrays/iterating.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.1.</b>
+                        
+                         Iterating
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5.2" data-path="content/javascript/arrays/manipulating.html">
+            
+                
+                    <a href="../../../content/javascript/arrays/manipulating.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.2.</b>
+                        
+                         Manipulating
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5.3" data-path="content/javascript/arrays/split-join.html">
+            
+                
+                    <a href="../../../content/javascript/arrays/split-join.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.3.</b>
+                        
+                         Split Join
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="content/javascript/objects/index.html">
+            
+                
+                    <a href="../../../content/javascript/objects/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         Objects
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.6.1" data-path="content/javascript/objects/json.html">
+            
+                
+                    <a href="../../../content/javascript/objects/json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.1.</b>
+                        
+                         JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6.2" data-path="content/javascript/objects/math.html">
+            
+                
+                    <a href="../../../content/javascript/objects/math.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.2.</b>
+                        
+                         Math
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7" data-path="content/javascript/bom-and-dom/bom.html">
+            
+                
+                    <a href="../../../content/javascript/bom-and-dom/bom.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                         BOM and DOM
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.7.1" data-path="content/javascript/bom-and-dom/dom-query-modify.html">
+            
+                
+                    <a href="../../../content/javascript/bom-and-dom/dom-query-modify.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.1.</b>
+                        
+                         Dom Query Modify
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7.2" data-path="content/javascript/bom-and-dom/dom-events.html">
+            
+                
+                    <a href="../../../content/javascript/bom-and-dom/dom-events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.2.</b>
+                        
+                         Dom Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7.3" data-path="content/javascript/bom-and-dom/calculator.html">
+            
+                
+                    <a href="../../../content/javascript/bom-and-dom/calculator.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.3.</b>
+                        
+                         Build a Calculator
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7.4" data-path="content/javascript/bom-and-dom/google_maps_api.html">
+            
+                
+                    <a href="../../../content/javascript/bom-and-dom/google_maps_api.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.4.</b>
+                        
+                         Google Maps API
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="content/jquery/getting-started.html">
+            
+                
+                    <a href="../../../content/jquery/getting-started.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         jQuery
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="content/jquery/selectors/README.html">
+            
+                
+                    <a href="../../../content/jquery/selectors/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         Selectors
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1.1" data-path="content/jquery/selectors/id-selector.html">
+            
+                
+                    <a href="../../../content/jquery/selectors/id-selector.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.1.</b>
+                        
+                         ID Selector
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.1.2" data-path="content/jquery/selectors/class-selector.html">
+            
+                
+                    <a href="../../../content/jquery/selectors/class-selector.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.2.</b>
+                        
+                         Class Selector
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.1.3" data-path="content/jquery/selectors/element-selector.html">
+            
+                
+                    <a href="../../../content/jquery/selectors/element-selector.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.3.</b>
+                        
+                         Element Selector
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.1.4" data-path="content/jquery/selectors/multiple-selector.html">
+            
+                
+                    <a href="../../../content/jquery/selectors/multiple-selector.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.4.</b>
+                        
+                         Multiple Selector
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="content/jquery/events/README.html">
+            
+                
+                    <a href="../../../content/jquery/events/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         Events
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.2.1" data-path="content/jquery/events/mouse-events.html">
+            
+                
+                    <a href="../../../content/jquery/events/mouse-events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.1.</b>
+                        
+                         Mouse Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2.2" data-path="content/jquery/events/keyboard-events.html">
+            
+                
+                    <a href="../../../content/jquery/events/keyboard-events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.2.</b>
+                        
+                         Keyboard Events
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="content/jquery/essential-methods/README.html">
+            
+                
+                    <a href="../../../content/jquery/essential-methods/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         Essential Methods
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.3.1" data-path="content/jquery/essential-methods/attributes-and-css.html">
+            
+                
+                    <a href="../../../content/jquery/essential-methods/attributes-and-css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                         Attributes And CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3.2" data-path="content/jquery/essential-methods/traversing.html">
+            
+                
+                    <a href="../../../content/jquery/essential-methods/traversing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.2.</b>
+                        
+                         Traversing
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="content/jquery/effects/index.html">
+            
+                
+                    <a href="../../../content/jquery/effects/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         Effects
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.4.1" data-path="content/jquery/effects/basic-effects.html">
+            
+                
+                    <a href="../../../content/jquery/effects/basic-effects.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.1.</b>
+                        
+                         Basic Effects
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4.2" data-path="content/jquery/effects/fading.html">
+            
+                
+                    <a href="../../../content/jquery/effects/fading.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.2.</b>
+                        
+                         Fading
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4.3" data-path="content/jquery/effects/sliding.html">
+            
+                
+                    <a href="../../../content/jquery/effects/sliding.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.3.</b>
+                        
+                         Sliding
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4.4" data-path="content/jquery/effects/animate.html">
+            
+                
+                    <a href="../../../content/jquery/effects/animate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.4.</b>
+                        
+                         Animate
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="content/jquery/simple-simon/create-game.html">
+            
+                
+                    <a href="../../../content/jquery/simple-simon/create-game.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         Simple Simon Game
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="content/jquery/ajax/README.html">
+            
+                
+                    <a href="../../../content/jquery/ajax/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         Ajax Requests
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.6.1" data-path="content/jquery/ajax/ajax-intro.html">
+            
+                
+                    <a href="../../../content/jquery/ajax/ajax-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.1.</b>
+                        
+                         Ajax Intro
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="5.6.2" data-path="content/jquery/ajax/ajax-api-request.html">
+            
+                
+                    <a href="../../../content/jquery/ajax/ajax-api-request.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.2.</b>
+                        
+                         Ajax API Request
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="content/jquery/whack-a-mole/create-game.html">
+            
+                
+                    <a href="../../../content/jquery/whack-a-mole/create-game.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         Whack-A-Mole
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="content/html-css/responsive/index.html">
+            
+                
+                    <a href="../../../content/html-css/responsive/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Responsive Design
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="content/html-css/templating/index.html">
+            
+                
+                    <a href="../../../content/html-css/templating/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Templating
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="content/html-css/templating/template-using-includes.html">
+            
+                
+                    <a href="../../../content/html-css/templating/template-using-includes.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         Using Includes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.2" data-path="content/html-css/templating/template-using-other-libraries.html">
+            
+                
+                    <a href="../../../content/html-css/templating/template-using-other-libraries.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                         Using Other Libraries
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.3" data-path="content/html-css/templating/template-wordpress.html">
+            
+                
+                    <a href="../../../content/html-css/templating/template-wordpress.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                         Using Wordpress
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="content/appendix/code-standards.html">
+            
+                
+                    <a href="../../../content/appendix/code-standards.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Appendix A: Code Standards
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="content/appendix/variable-function-class.html">
+            
+                
+                    <a href="../../../content/appendix/variable-function-class.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         Variables Functions &amp; Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="content/appendix/control-structures.html">
+            
+                
+                    <a href="../../../content/appendix/control-structures.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         Control Structures
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.3" data-path="content/appendix/other-languages.html">
+            
+                
+                    <a href="../../../content/appendix/other-languages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                         Other Languages
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="content/postwork/index.html">
+            
+                
+                    <a href="../../../content/postwork/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Appendix B: Postwork
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="9.1" data-path="content/postwork/basic_challenges/index.html">
+            
+                
+                    <a href="../../../content/postwork/basic_challenges/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                         Coding Challenges
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="9.1.1" data-path="content/postwork/basic_challenges/sum_up_those_digits.html">
+            
+                
+                    <a href="../../../content/postwork/basic_challenges/sum_up_those_digits.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.1.</b>
+                        
+                         Sum Up Those Digits
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.1.2" data-path="content/postwork/basic_challenges/password_generator.html">
+            
+                
+                    <a href="../../../content/postwork/basic_challenges/password_generator.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.2.</b>
+                        
+                         Password Generator
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.1.3" data-path="content/postwork/basic_challenges/narcissistic_numbers.html">
+            
+                
+                    <a href="../../../content/postwork/basic_challenges/narcissistic_numbers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.3.</b>
+                        
+                         Narcissistic Numbers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.1.4" data-path="content/postwork/basic_challenges/maximum-subsequence-sum.html">
+            
+                
+                    <a href="../../../content/postwork/basic_challenges/maximum-subsequence-sum.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.4.</b>
+                        
+                         Maximum Subarray
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.1.5" data-path="content/postwork/basic_challenges/string-reversal.html">
+            
+                
+                    <a href="../../../content/postwork/basic_challenges/string-reversal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.5.</b>
+                        
+                         String Reversal
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.2" data-path="content/postwork/website-status-page.html">
+            
+                
+                    <a href="../../../content/postwork/website-status-page.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                         Website Status Page
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.3" data-path="content/postwork/memory-game.html">
+            
+                
+                    <a href="../../../content/postwork/memory-game.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                         Memory Game
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.4" data-path="content/postwork/locations.html">
+            
+                
+                    <a href="../../../content/postwork/locations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                         Incidents Map
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.5" data-path="content/postwork/trains.html">
+            
+                
+                    <a href="../../../content/postwork/trains.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                         Travel Distance Calculation
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.6" data-path="content/postwork/sales-tax.html">
+            
+                
+                    <a href="../../../content/postwork/sales-tax.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                         Sales Tax
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.7" data-path="content/postwork/mars-rover.html">
+            
+                
+                    <a href="../../../content/postwork/mars-rover.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.7.</b>
+                        
+                         Mars Rover
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.8" data-path="content/postwork/pdf-parser.html">
+            
+                
+                    <a href="../../../content/postwork/pdf-parser.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.8.</b>
+                        
+                         PDF Parser
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.9" data-path="content/postwork/dashboard.html">
+            
+                
+                    <a href="../../../content/postwork/dashboard.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.9.</b>
+                        
+                         Ajax Dashboard
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.10" data-path="content/postwork/beef-up-your-blog.html">
+            
+                
+                    <a href="../../../content/postwork/beef-up-your-blog.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.10.</b>
+                        
+                         Beef Up Your Blog
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.11" data-path="content/postwork/larabook.html">
+            
+                
+                    <a href="../../../content/postwork/larabook.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.11.</b>
+                        
+                         LaraBook
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+
+    
+    
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../" >Codeup Frontend</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_71">
+                    
+                        <h1 id="what-is-an-api"><a name="what-is-an-api" class="plugin-anchor" href="#what-is-an-api"><span class="fa fa-link"></span></a>What is an API</h1>
+<p>API stands for <em>application programming interface</em>. An API is any way for one application or program to communicate with another one. There are tens of thousands of APIs in the world, many of which are actually built into our programming languages and tools. For example, later in this course you will be writing PHP code that communicates with a MySQL database. The way PHP does this is through an API provided by MySQL.</p>
+<p>When we talk about APIs in JavaScript, typically we are talking about services that can send or retrieve data over the internet using ajax. Again, there are <a href="http://www.publicapis.com" target="_blank">thousands</a>, upon <a href="http://catalog.data.gov/dataset?sort=views_recent+desc&amp;res_format=api" target="_blank">thousands</a>, upon <a href="http://www.programmableweb.com/category/all/apis?data_format=21175%2C21173%2C21190" target="_blank"><strong>thousands</strong></a> of open APIs you can use with JavaScript. Most of these use <a href="http://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints" target="_blank"><em>REpresentational State Transfer (REST)</em></a> for communication. Later in this course you will learn how to make your own RESTful API using Laravel, but communicating with another company&apos;s API will give us a good preview of how the process works.</p>
+<h2 id="openweathermap-api"><a name="openweathermap-api" class="plugin-anchor" href="#openweathermap-api"><span class="fa fa-link"></span></a>OpenWeatherMap API</h2>
+<p>In this section we will work with an API from <a href="http://openweathermap.org" target="_blank">OpenWeatherMap</a>. This API offers a variety of information for free, including <a href="http://openweathermap.org/current" target="_blank">current weather data</a>, <a href="http://openweathermap.org/forecast" target="_blank">forecast information</a>, and can even be used to upload data from your own <a href="http://openweathermap.org/stations" target="_blank">weather station</a>.</p>
+<p>The first thing to do is to <a href="http://openweathermap.org/register" target="_blank">sign up</a> with OpenWeatherMap. Once you register, you will be given an <a href="http://openweathermap.org/my" target="_blank">APPID</a> such as <code>467fce2fbe4d967cacd8c8886374905a</code>. This ID is how we will identify ourselves to the API when we make our requests.</p>
+<p><em><strong>Note:</strong> Most APIs will require the use of an App ID or API Key such as this, and will return an error if it is omitted or an invalid key is sent. OpenWeatherMap is unique in that it...does not. Even though OpenWeatherMap will respond with correct data without providing an APPID, it is still good practice to include it, in case their requirements change or rate limits start being enforced.</em></p>
+<h2 id="pulling-san-antonio-weather"><a name="pulling-san-antonio-weather" class="plugin-anchor" href="#pulling-san-antonio-weather"><span class="fa fa-link"></span></a>Pulling San Antonio Weather</h2>
+<p>We can query for San Antonio weather data by sending an ajax <code>GET</code> request and including <code>q: San Antonio, TX</code> like the following:</p>
+<pre><code class="lang-js">$.get(<span class="hljs-string">&quot;http://api.openweathermap.org/data/2.5/weather&quot;</span>, {
+    APPID: <span class="hljs-string">&quot;467fce2fbe4d967cacd8c8886374905a&quot;</span>,
+    q:     <span class="hljs-string">&quot;San Antonio, TX&quot;</span>
+});
+</code></pre>
+<p>Remember, there are a lot of different ways we can format this request. All of the following ajax calls are identical to the one above.</p>
+<pre><code class="lang-js">$.ajax({
+    url: <span class="hljs-string">&quot;http://api.openweathermap.org/data/2.5/weather&quot;</span>,
+    type: <span class="hljs-string">&quot;GET&quot;</span>,
+    data: {
+        APPID: <span class="hljs-string">&quot;467fce2fbe4d967cacd8c8886374905a&quot;</span>,
+        q:     <span class="hljs-string">&quot;San Antonio, TX&quot;</span>
+    }
+});
+
+$.ajax(<span class="hljs-string">&quot;http://api.openweathermap.org/data/2.5/weather&quot;</span>, {
+    data: {
+        APPID: <span class="hljs-string">&quot;467fce2fbe4d967cacd8c8886374905a&quot;</span>,
+        q:     <span class="hljs-string">&quot;San Antonio, TX&quot;</span>
+    }
+});
+
+$.get(<span class="hljs-string">&quot;http://api.openweathermap.org/data/2.5/weather?APPID=467fce2fbe4d967cacd8c8886374905a&amp;q=San+Antonio,+TX&quot;</span>);
+</code></pre>
+<p>When you start exploring a new API, it is important to learn what data is sent back from each request. We can exploring this information using <code>console.log()</code> inside of a <code>.done()</code> handler:</p>
+<pre><code class="lang-js">$.get(<span class="hljs-string">&quot;http://api.openweathermap.org/data/2.5/weather&quot;</span>, {
+    APPID: <span class="hljs-string">&quot;467fce2fbe4d967cacd8c8886374905a&quot;</span>,
+    q:     <span class="hljs-string">&quot;San Antonio, TX&quot;</span>
+}).done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(data)</span> </span>{
+    <span class="hljs-built_in">console</span>.log(data);
+});
+</code></pre>
+<p>When we log the data, we will see it is a JSON object like the following:</p>
+<pre><code class="lang-json">{
+    &quot;<span class="hljs-attribute">coord</span>&quot;: <span class="hljs-value">{
+        &quot;<span class="hljs-attribute">lon</span>&quot;: <span class="hljs-value">-<span class="hljs-number">98.49</span></span>,
+        &quot;<span class="hljs-attribute">lat</span>&quot;: <span class="hljs-value"><span class="hljs-number">29.42</span>
+    </span>}</span>,
+    &quot;<span class="hljs-attribute">sys</span>&quot;: <span class="hljs-value">{
+        &quot;<span class="hljs-attribute">type</span>&quot;: <span class="hljs-value"><span class="hljs-number">3</span></span>,
+        &quot;<span class="hljs-attribute">id</span>&quot;: <span class="hljs-value"><span class="hljs-number">60540</span></span>,
+        &quot;<span class="hljs-attribute">message</span>&quot;: <span class="hljs-value"><span class="hljs-number">0.008</span></span>,
+        &quot;<span class="hljs-attribute">country</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;United States of America&quot;</span></span>,
+        &quot;<span class="hljs-attribute">sunrise</span>&quot;: <span class="hljs-value"><span class="hljs-number">1425473734</span></span>,
+        &quot;<span class="hljs-attribute">sunset</span>&quot;: <span class="hljs-value"><span class="hljs-number">1425515734</span>
+    </span>}</span>,
+    &quot;<span class="hljs-attribute">weather</span>&quot;: <span class="hljs-value">[{
+        &quot;<span class="hljs-attribute">id</span>&quot;: <span class="hljs-value"><span class="hljs-number">804</span></span>,
+        &quot;<span class="hljs-attribute">main</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Clouds&quot;</span></span>,
+        &quot;<span class="hljs-attribute">description</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;overcast clouds&quot;</span></span>,
+        &quot;<span class="hljs-attribute">icon</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;04n&quot;</span>
+    </span>}]</span>,
+    &quot;<span class="hljs-attribute">base</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;cmc stations&quot;</span></span>,
+    &quot;<span class="hljs-attribute">main</span>&quot;: <span class="hljs-value">{
+        &quot;<span class="hljs-attribute">temp</span>&quot;: <span class="hljs-value"><span class="hljs-number">287.55</span></span>,
+        &quot;<span class="hljs-attribute">humidity</span>&quot;: <span class="hljs-value"><span class="hljs-number">95</span></span>,
+        &quot;<span class="hljs-attribute">pressure</span>&quot;: <span class="hljs-value"><span class="hljs-number">1013.102</span></span>,
+        &quot;<span class="hljs-attribute">temp_min</span>&quot;: <span class="hljs-value"><span class="hljs-number">287.55</span></span>,
+        &quot;<span class="hljs-attribute">temp_max</span>&quot;: <span class="hljs-value"><span class="hljs-number">287.55</span>
+    </span>}</span>,
+    &quot;<span class="hljs-attribute">wind</span>&quot;: <span class="hljs-value">{
+        &quot;<span class="hljs-attribute">speed</span>&quot;: <span class="hljs-value"><span class="hljs-number">2.12</span></span>,
+        &quot;<span class="hljs-attribute">deg</span>&quot;: <span class="hljs-value"><span class="hljs-number">178.5</span>
+    </span>}</span>,
+    &quot;<span class="hljs-attribute">rain</span>&quot;: <span class="hljs-value">{
+        &quot;<span class="hljs-attribute">3h</span>&quot;: <span class="hljs-value"><span class="hljs-number">0</span>
+    </span>}</span>,
+    &quot;<span class="hljs-attribute">clouds</span>&quot;: <span class="hljs-value">{
+        &quot;<span class="hljs-attribute">all</span>&quot;: <span class="hljs-value"><span class="hljs-number">92</span>
+    </span>}</span>,
+    &quot;<span class="hljs-attribute">dt</span>&quot;: <span class="hljs-value"><span class="hljs-number">1425430669</span></span>,
+    &quot;<span class="hljs-attribute">id</span>&quot;: <span class="hljs-value"><span class="hljs-number">4726206</span></span>,
+    &quot;<span class="hljs-attribute">name</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;San Antonio&quot;</span></span>,
+    &quot;<span class="hljs-attribute">cod</span>&quot;: <span class="hljs-value"><span class="hljs-number">200</span>
+</span>}
+</code></pre>
+<p>Much of this information seems relatively obvious, such as <code>lat</code>, <code>lon</code>, <code>country</code>, etc. Some of the other pieces are less clear. If any part of an API request is confusing, remember to always go back to the <a href="http://openweathermap.org/weather-data#current" target="_blank">documentation</a>. Notice that the temperature is expressed in <a href="http://en.wikipedia.org/wiki/Kelvin" target="_blank">Kelvin</a>. We can change that by passing yet another <a href="http://openweathermap.org/current#other" target="_blank">parameter</a> to the request.</p>
+<pre><code class="lang-js">$.get(<span class="hljs-string">&quot;http://api.openweathermap.org/data/2.5/weather&quot;</span>, {
+    APPID: <span class="hljs-string">&quot;467fce2fbe4d967cacd8c8886374905a&quot;</span>,
+    q:     <span class="hljs-string">&quot;San Antonio, TX&quot;</span>,
+    units: <span class="hljs-string">&quot;imperial&quot;</span>
+}).done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(data)</span> </span>{
+    <span class="hljs-built_in">console</span>.log(data);
+});
+</code></pre>
+<p>Our temperature should now be coming back in degrees fahrenheit. Let&apos;s look at other ways we can request this information. In particular, from the data we can see that San Antonio has an <code>id</code> of &quot;4726206&quot;. We can use that to look up weather information as well:</p>
+<pre><code class="lang-js">$.get(<span class="hljs-string">&quot;http://api.openweathermap.org/data/2.5/weather&quot;</span>, {
+    APPID: <span class="hljs-string">&quot;467fce2fbe4d967cacd8c8886374905a&quot;</span>,
+    id:     <span class="hljs-number">4726206</span>,
+    units: <span class="hljs-string">&quot;imperial&quot;</span>
+}).done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(data)</span> </span>{
+    <span class="hljs-built_in">console</span>.log(data);
+});
+</code></pre>
+<p>We will get the same information back as before. We can also look information by its latitude and longitude:</p>
+<pre><code class="lang-js">$.get(<span class="hljs-string">&quot;http://api.openweathermap.org/data/2.5/weather&quot;</span>, {
+    APPID: <span class="hljs-string">&quot;467fce2fbe4d967cacd8c8886374905a&quot;</span>,
+    lat:    <span class="hljs-number">29.423017</span>,
+    lon:   -<span class="hljs-number">98.48527</span>,
+    units: <span class="hljs-string">&quot;imperial&quot;</span>
+}).done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(data)</span> </span>{
+    <span class="hljs-built_in">console</span>.log(data);
+});
+</code></pre>
+<p>Latitude and longitude have the advantage that we can look up weather information for any place on earth, even if we do not know its name or id. Finally, let&apos;s look at how we could get <a href="http://openweathermap.org/forecast" target="_blank"><em>forecast</em> information</a> using those same coordinates:</p>
+<pre><code class="lang-js">$.get(<span class="hljs-string">&quot;http://api.openweathermap.org/data/2.5/forecast/daily&quot;</span>, {
+    APPID: <span class="hljs-string">&quot;467fce2fbe4d967cacd8c8886374905a&quot;</span>,
+    lat:    <span class="hljs-number">29.423017</span>,
+    lon:   -<span class="hljs-number">98.48527</span>,
+    units: <span class="hljs-string">&quot;imperial&quot;</span>
+}).done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(data)</span> </span>{
+    <span class="hljs-built_in">console</span>.log(data);
+});
+</code></pre>
+<p>This time we have changed what URL we are sending our request to. The URL you send API requests to is often called its <em>endpoint</em>. We have separate endpoints for each type of API request we can send.</p>
+<p>Like we did when we first started exploring the current weather conditions, be sure to take a look at the data our request <a href="http://openweathermap.org/weather-data#16days" target="_blank">returns</a>.</p>
+<h2 id="exercise"><a name="exercise" class="plugin-anchor" href="#exercise"><span class="fa fa-link"></span></a>Exercise</h2>
+<ol>
+<li>In <code>~/vagrant-lamp/codeup.dev/public</code> create a new html file called <code>weather_map.html</code>.</li>
+<li>Using Bootstrap, jQuery &amp; ajax, and the OpenWeatherMap API, start by showing the current conditions for San Antonio on your page.</li>
+<li><p>Update your layout and ajax request(s) to display a three day forecast for San Antonio that looks like the screenshot below.</p>
+<p><img src="/content/img/3dayforecast.jpg" alt="3 Day Forecast"></p>
+<p><em><strong>Hint:</strong> The URLs for OpenWeatherMap&apos;s icons are formatted <code>http://openweathermap.org/img/w/[icon].png</code> where <code>[icon]</code> comes from the API request.</em></p>
+</li>
+<li>Create input boxes for &quot;Latitude&quot; and &quot;Longitude&quot; and a <code>&lt;button&gt;</code> that will take the values from those inputs and feed them into your API request. Use Google Maps to <a href="https://support.google.com/maps/answer/18539" target="_blank">find the coordinates</a> for different places around the world and test this out.</li>
+<li><p>Go back to your Google Maps API exercise. Recreate the map below your 3 day forecast. Read through the documentation for the Google Maps API and figure out how to allow the user to drop a pin on any place on the map. Once the user drops a pin, grab its coordinates and feed those into your OpenWeatherMap API. Update the three day forecast with the information from those coordinates (you should also get rid of your input boxes at this point).</p>
+<p><img src="/content/img/3dayforecastmap.jpg" alt="3 Day Forecast Map"></p>
+</li>
+<li>As you complete each step, commit your changes and push them to GitHub.</li>
+</ol>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../../content/jquery/ajax/ajax-intro.html" class="navigation navigation-prev " aria-label="Previous page: Ajax Intro"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../../content/jquery/whack-a-mole/create-game.html" class="navigation navigation-next " aria-label="Next page: Whack-A-Mole"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../../gitbook/app.js"></script>
+
+    
+    <script src="../../../gitbook/plugins/gitbook-plugin-toggle-chapters/test.js"></script>
+    
+
+    
+    <script src="../../../gitbook/plugins/gitbook-plugin-jsbin/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book Codeup Frontend -->
+</html>
