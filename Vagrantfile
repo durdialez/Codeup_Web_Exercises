@@ -6,7 +6,7 @@
 #############################
 
 box      = 'ubuntu/trusty64'
-hostname = 'codeup-trusty'
+hostname = 'codeup-new'
 domain   = 'codeup.dev'
 ip       = '192.168.77.77'
 ram      = '512'

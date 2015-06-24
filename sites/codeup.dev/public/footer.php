@@ -1,0 +1,1 @@
+<?php  echo "<footer>Page designed and made by Daniel</footer>"; ?>

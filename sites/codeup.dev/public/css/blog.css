@@ -2,3 +2,29 @@ h1 {
 	border: 1px solid black;
 	color: green;
 }
+
+p {
+	background-color: lightgrey;
+	font-family: Serif;
+	margin-left: 10%;
+	margin-right: 5%;
+	width: 50%;
+}
+
+h2 {
+	margin-left: 5%;
+	margin-right: 10%;
+}
+
+
+
+@media screen and (min-width: 550px) and (max-width: 799px) {
+	p {
+		width: 60%;
+}
+
+@media screen and (min-width: 800px) {
+	p {
+		width: 80%;
+	}
+}
